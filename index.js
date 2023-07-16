@@ -8,7 +8,7 @@ import student from './db/dbconnect.js';
 
 const app = express()
 const port = process.env.PORT;
-const DB_URL = "mongodb://127.0.0.1:27017/test";
+const DB_URL = process.env.DB_URL;
 
 try {
   mongoose.connect(DB_URL);
